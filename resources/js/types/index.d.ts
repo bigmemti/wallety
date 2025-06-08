@@ -41,3 +41,14 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Card {
+    id: number;
+    title: string;
+    description: string;
+    balance: number;
+    user_id: number;
+    user?: User;
+    created_at: string;
+    updated_at: string;
+}
