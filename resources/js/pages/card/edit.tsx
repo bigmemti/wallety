@@ -32,7 +32,7 @@ export default function Edit({card}: {card: Card}){
         description: string;
     }
 
-    const { data, setData, put, errors, processing, progress } = useForm<Required<CardForm>>({
+    const { data, setData, put, errors, processing } = useForm<Required<CardForm>>({
         title: card.title, 
         balance: card.balance,
         description: card.description,

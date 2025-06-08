@@ -28,7 +28,7 @@ interface CardForm {
 }
 
 export default function Create(){
-    const { post, data, setData, errors, processing, progress } = useForm<Required<CardForm>>({
+    const { post, data, setData, errors, processing } = useForm<Required<CardForm>>({
         title: '', 
         balance: 0,
         description: '',

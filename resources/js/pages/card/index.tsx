@@ -29,7 +29,7 @@ export default function Index({ cards, success } : { cards: Card[], success: str
             console.log(event.detail.page.props.success);
           toast.success(event.detail.page.props.success as string);
         })
-      }, [])
+      }, [success])
     
     const [deleteDialog, setDeleteDialog] = useState<Partial<{
         open: boolean;
